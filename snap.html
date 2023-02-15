@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="snap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div>
+        <div class="all">
+            <!-- first container starts -->
+            <div class="first-con">
+                <img src="/images/snap logo.png" alt="">
+                <h1>Sign-in to Snapchat</h1>
+
+                <label>Username or Email</label>
+                <input type="text">
+                <a href="#">Use phone number instead</a>
+            </div>
+
+            <!-- second container starts -->
+            <div class="second-con">
+                <img src="/images/snqp.png" alt="">
+                <h2>Verification</h2>
+                <span>Please solve this puzzle so we know you are a real person</span>
+                <button>Verify</button>
+                <div class="h">
+                    <hr>
+                </div>
+                <i class="fa-solid fa-headphones"></i>
+
+            </div>
+
+            <button class="btn">Next</button>
+        </div>
+
+        <!-- footers starts -->
+        <div>
+            <hr>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Company</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <hr>
+                    <a href="#">Snap Inc.</a>
+                    <hr>
+                    <a href="#">Careers</a>
+                    <hr>
+                    <a href="#">News</a>
+                </div>
+            </div>
+            <!-- <hr>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Community</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <hr>
+                    <a href="#">Support</a>
+                    <hr>
+                    <a href="#">Community Guidelines</a>
+                    <hr>
+                    <a href="#">Safety Center</a>
+                </div>
+            </div>
+            <hr>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Advertising</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <hr>
+                    <a href="#">Buy Ads</a>
+                    <hr>
+                    <a href="#">Advertising Policies</a>
+                    <hr>
+                    <a href="#">Political Ads Library</a>
+                    <hr>
+                    <a href="#">Brand Guidelines</a>
+                    <hr>
+                    <a href="#">Promotions Rules</a>
+                </div>
+            </div>
+            <hr>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Legal</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <hr>
+                    <a href="#">Privacy Center</a>
+                    <hr>
+                    <a href="#">Cookies Policy</a>
+                    <hr>
+                    <a href="#">Report Infringement</a>
+                    <hr>
+                    <a href="#">Custom Creative Tools Terms</a>
+                    <hr>
+                    <a href="#">Community Geofilter Terms</a>
+                    <hr>
+                    <a href="#">Lens Studio Terms</a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
